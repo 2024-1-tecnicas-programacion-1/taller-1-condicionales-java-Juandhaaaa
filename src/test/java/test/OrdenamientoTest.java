@@ -19,7 +19,23 @@ public class OrdenamientoTest {
         String valorActual = Ordenamiento.evaluar(7, 0, 6, 1);
         assertEquals(valorEsperado, valorActual);
     }
+         // TODO: Agrega tus otros casos de prueba aquí
     
-    // TODO: Agrega tus otros casos de prueba aquí
+    @Test
+    public void testOrdenarNegativos() {
+        String valorEsperado = "-5 -3 -2 0";
+        String valorActual = Ordenamiento.evaluar(-2, -5, 0, -3);
+        assertEquals(valorEsperado, valorActual);
+    }
     
+    @Test
+    public void testOrdenarRepetidos() {
+        String valorEsperado = "2 2 2 3";
+        String valorActual = Ordenamiento.evaluar(2, 3, 2, 2);
+        assertEquals(valorEsperado, valorActual);
+    }
 }
+    
+    
+    
+

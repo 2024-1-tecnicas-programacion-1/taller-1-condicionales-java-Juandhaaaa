@@ -19,6 +19,19 @@ public class TrianguloTest {
         String valorActual = Triangulo.evaluar(3.9, 6.0, 1.2);
         assertEquals(valorEsperado, valorActual);
     }
+     @Test
+    public void testIsosceles() {
+        String valorEsperado = "El triángulo es isósceles";
+        String valorActual = Triangulo.evaluar(4.0, 4.0, 6.0);
+        assertEquals(valorEsperado, valorActual);
+    }
+    
+    @Test
+    public void testEscaleno() {
+        String valorEsperado = "El triángulo es escaleno";
+        String valorActual = Triangulo.evaluar(3.0, 4.0, 5.0);
+        assertEquals(valorEsperado, valorActual);
+    }
     
     // TODO: Agrega tus otros casos de prueba aquí
     
